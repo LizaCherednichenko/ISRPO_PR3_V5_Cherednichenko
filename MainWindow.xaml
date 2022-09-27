@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_PR3_V5_Cherednichenko"
         mc:Ignorable="d"
-        Title="ПР3 Чередниченко " Height="450" Width="548.454">
+        Title="ПР3 Чередниченко " Height="450" Width="548.454" Background="#FFBCCEDA">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,14 +19,21 @@
             <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="Введите значение R"/>
-        <TextBox x:Name="X" Grid.Column="1" Margin="0,6,6,6"/>
-        <Label Grid.Row="1" Content="Введите значение r" Margin="0,6,0,0"/>
-        <TextBox x:Name="Y" Grid.Column="1" Grid.Row="1" Margin="0,6,0,0"/>
-        <Label Grid.Row="2" Content="Введите значение l" Margin="0,6,0,0"/>
-        <TextBox x:Name="Z" Grid.Column="1" Grid.Row="2" Margin="0,6,0,0"/>
-        <TextBox x:Name="Itog" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,46,0,0" Grid.RowSpan="2"/>
-        <Button x:Name="Schet" Grid.Column="1" Grid.Row="5" Content="Выполнить" Click="Schet_Click"/>
+        <Label Grid.Row="0" Content="Введите значение R" FontFamily="Sneakerhead BTN Shadow" FontStyle="Italic" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="X" Grid.Column="1" Margin="0,6,10,6" FontWeight="Bold" FontSize="16" Background="#FFECF8FF"/>
+        <Label Grid.Row="1" Content="Введите значение r" Margin="0,6,0,0" FontFamily="Sneakerhead BTN Shadow" FontStyle="Italic" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Y" Grid.Column="1" Grid.Row="1" Margin="0,3,10,3" FontWeight="Bold" FontSize="16" Background="#FFECF8FF"/>
+        <Label Grid.Row="2" Content="Введите значение l" Margin="0,6,0,0" FontFamily="Sneakerhead BTN Shadow" FontStyle="Italic" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Z" Grid.Column="1" Grid.Row="2" Margin="0,6,10,0" FontWeight="Bold" FontSize="16" Background="#FFECF8FF"/>
+        <TextBox x:Name="Itog" Grid.ColumnSpan="2" Grid.Row="3" FontSize="14" Margin="10,10,10,0"/>
+        <Button x:Name="Schet" Grid.Column="1" Grid.Row="4" Content="Выполнить" Click="Schet_Click" FontSize="14" FontWeight="Bold" FontFamily="Sonic XBd BT" Margin="10,8,10,7">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB36BE4" Offset="0"/>
+                    <GradientStop Color="#FF92C3DE" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
